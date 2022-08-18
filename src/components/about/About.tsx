@@ -4,7 +4,7 @@ import "./about.css";
 type Props = {};
 
 const about = (props: Props) => {
-  return <div>about</div>;
+  return <section id="about">about</section>;
 };
 
 export default about;

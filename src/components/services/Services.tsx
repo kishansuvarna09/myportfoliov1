@@ -4,7 +4,7 @@ import "./services.css";
 type Props = {};
 
 const services = (props: Props) => {
-  return <div>services</div>;
+  return <section id="services">services</section>;
 };
 
 export default services;

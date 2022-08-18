@@ -4,7 +4,7 @@ import "./testimonials.css";
 type Props = {};
 
 const testimonials = (props: Props) => {
-  return <div>testimonials</div>;
+  return <section id="testimonials">testimonials</section>;
 };
 
 export default testimonials;

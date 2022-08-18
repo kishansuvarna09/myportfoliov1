@@ -4,7 +4,7 @@ import "./experience.css";
 type Props = {};
 
 const experience = (props: Props) => {
-  return <div>experience</div>;
+  return <section id="experience">experience</section>;
 };
 
 export default experience;

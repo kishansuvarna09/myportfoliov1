@@ -4,7 +4,7 @@ import "./contact.css";
 type Props = {};
 
 const contact = (props: Props) => {
-  return <div>contact</div>;
+  return <section id="contact">contact</section>;
 };
 
 export default contact;

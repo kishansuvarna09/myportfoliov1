@@ -4,7 +4,7 @@ import "./portfolio.css";
 type Props = {};
 
 const portfolio = (props: Props) => {
-  return <div>portfolio</div>;
+  return <section id="portfolio">portfolio</section>;
 };
 
 export default portfolio;
