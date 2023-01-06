@@ -20,7 +20,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
           <p className="text-[36px]">KS.</p>
         </div>
       </div>
-      <div className="basis-full">Contetn</div>
+      <div className="basis-full">{children}</div>
       <div className="flex justify-center items-center p-2 space-x-10">
         <div className="">Github</div>
         <div className="">LinkedIn</div>
