@@ -8,9 +8,11 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "framer-motion": "^8.2.4",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^5.15.0"
   },
   "devDependencies": {
