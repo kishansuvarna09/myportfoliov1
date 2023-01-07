@@ -23,3 +23,12 @@ a {
   font-family: 'montserrat';
   src: ('../../public/Montserrat-Regular.ttf');
 }
+
+@layer components {
+  * {
+    letter-spacing: 5px;
+  }
+  .heroButton {
+    @apply px-6 py-2 bg-inherit	 border border-[#242424] rounded-full uppercase text-sm tracking-widest text-[#64ffda]/40 transition-all hover:border-[#64ffda] hover:text-[#64ffda];
+  }
+}

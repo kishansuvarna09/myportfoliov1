@@ -19,11 +19,11 @@ const nextConfig = {
       {
         source: '/(.*)',
         headers: [
-          {
-            key: 'Content-Security-Policy',
-            value:
-              "style-src 'self' 'unsafe-inline'; font-src 'self' data:; default-src 'self'; script-src 'unsafe-eval' 'self'",
-          },
+          // {
+          //   key: 'Content-Security-Policy',
+          //   value:
+          //     "style-src 'self' 'unsafe-inline'; font-src 'self' data:; default-src 'self'; script-src 'unsafe-eval' 'self'",
+          // },
           {
             key: 'X-DNS-Prefetch-Control',
             value: 'on',

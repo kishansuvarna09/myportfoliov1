@@ -1,6 +1,9 @@
 import React from 'react';
-import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -21,10 +24,11 @@ const Header = (props: Props) => {
         transition={{
           duration: 1,
         }}
+        className="flex justify-center items-center p-2 gap-6 text-2xl"
       >
-        <div>
-          <SocialIcon url="https://github.com/kishansuvarna09" />
-        </div>
+        <h5 className="text-3xl font-semibold tracking-[10px] uppercase">
+          KS.
+        </h5>
       </motion.div>
       <motion.div
         initial={{
@@ -40,17 +44,23 @@ const Header = (props: Props) => {
         transition={{
           duration: 1,
         }}
+        className="flex justify-center items-center p-2 gap-6 text-2xl"
       >
+        <div>
+          <Link
+            href="https://github.com/kishansuvarna09"
+            passHref
+            legacyBehavior
+          >
+            <a target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </Link>
+        </div>
         <div className="flex flex-row items-center text-gray-300 cursor-pointer">
-          <SocialIcon
-            className="cursor-pointer"
-            network="email"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-            Get in touch
-          </p>
+          <a href="mailto:kishansuvarna09@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </div>
       </motion.div>
     </header>
