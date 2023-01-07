@@ -26,9 +26,11 @@ const Header = (props: Props) => {
         }}
         className="flex justify-center items-center p-2 gap-6 text-2xl"
       >
-        <h5 className="text-3xl font-semibold tracking-[10px] uppercase">
-          KS.
-        </h5>
+        <Link href="#hero">
+          <h5 className="text-3xl font-semibold tracking-[10px] uppercase">
+            KS.
+          </h5>
+        </Link>
       </motion.div>
       <motion.div
         initial={{
