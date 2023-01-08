@@ -15,18 +15,20 @@ const WorkExperience = (props: Props) => {
         Experience
       </h3>
 
-      <div className="text-2xl text-center max-w-[800px] text-gray-400">
+      <div className="text-base sm:text-lg lg:text-2xl text-center max-w-[800px] ">
         I've been doing web development for about 6 years now, and I'm always
         eager to learn more in this fast paced industry.
       </div>
       <div>
-        <h3>Here are a few technologies I’ve been working with recently:</h3>
-        <div className="py-5 space-y-5">
-          <div>JavaScript (ES6+)</div>
-          <div>Typescript</div>
-          <div>React</div>
-          <div>NextJS</div>
-          <div>Node.js</div>
+        <h3 className="text-sm text-center lg:text-base text-gray-400">
+          Here are a few technologies I’ve been working with recently:
+        </h3>
+        <div className="py-5 space-y-2 text-base  sm:text-lg lg:text-2xl grid grid-cols-2 lg:grid-cols-5 gap-5 justify-center items-center">
+          <div className="text-center">JavaScript (ES6+)</div>
+          <div className="text-center">Typescript</div>
+          <div className="text-center">React</div>
+          <div className="text-center">NextJS</div>
+          <div className="text-center">Node.js</div>
         </div>
       </div>
     </motion.div>

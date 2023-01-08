@@ -48,7 +48,13 @@ const Header = (props: Props) => {
         }}
         className="flex justify-center items-center p-2 gap-6 text-2xl"
       >
-        <div>
+        <motion.div
+          initial={{ scale: 1 }}
+          whileHover={{
+            scale: 1.5,
+            transition: { duration: 0.2 },
+          }}
+        >
           <Link
             href="https://github.com/kishansuvarna09"
             passHref
@@ -58,12 +64,19 @@ const Header = (props: Props) => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </Link>
-        </div>
-        <div className="flex flex-row items-center text-gray-300 cursor-pointer">
+        </motion.div>
+        <motion.div
+          initial={{ scale: 1 }}
+          whileHover={{
+            scale: 1.5,
+            transition: { duration: 0.5 },
+          }}
+          className="flex flex-row items-center text-gray-300 cursor-pointer"
+        >
           <a href="mailto:kishansuvarna09@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
-        </div>
+        </motion.div>
       </motion.div>
     </header>
   );

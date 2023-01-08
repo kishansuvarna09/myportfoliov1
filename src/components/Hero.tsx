@@ -1,15 +1,15 @@
 import Link from 'next/link';
 import React from 'react';
-import { Cursor, Typewriter, useTypewriter } from 'react-simple-typewriter';
-import BackgroundCircles from './BackgroundCircles';
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
+// import BackgroundCircles from './BackgroundCircles';
 
 type Props = {};
 
 const Hero = (props: Props) => {
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
-      'Eternal amateur at everything',
-      'I build things for the web',
+      'Eternal amateur at everything.',
+      'I build things for the web.',
       'Guy-who-loves-Beer.tsx',
       '<ButLovesToCodeMore />',
     ],
@@ -26,8 +26,11 @@ const Hero = (props: Props) => {
       /> */}
 
       <div className="py-5 z-20">
-        <h2 className="text-3xl uppercase text-gray-500 tracking-[15px] p-5 ">
-          Hi, my name is Kishan Suvarna
+        <h2 className="text-2xl md:text-3xl uppercase text-gray-500 tracking-[15px] p-5 ">
+          Hi, my name is{' '}
+          <span className="block md:inline text-5xl font-bold tracking-[15px] py-10 md:p-0 brightness-200">
+            Kishan Suvarna.
+          </span>
         </h2>
       </div>
       <h1 className="text-3xl font-semibold px-10 py-5 ">

@@ -13,6 +13,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        heroGreen: '#64ffda',
         // 'deep-blue': '#010026',
         // blue: '#2CBCE9',
         // red: '#DC4492',

@@ -5,6 +5,14 @@ const DOMAIN = process.env.NEXT_PUBLIC_NEXTJS_SITE_URL || 'locahost:3000';
  */
 const nextConfig = {
   /* config options here */
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    });
+    return config;
+  },
   async redirects() {
     return [
       {

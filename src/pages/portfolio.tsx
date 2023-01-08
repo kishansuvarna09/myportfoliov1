@@ -30,16 +30,24 @@ const PortfolioPage = () => (
 
     <footer
       className="bg-transparent
-             md:text-3xl text-white text-center
+             md:text-3xl text-white
              fixed
              inset-x-0
-             bottom-0"
+             bottom-0 
+             grid place-items-center
+             "
     >
-      <div className="z-30 py-5 lg:space-x-10">
-        <Link href="#about">
+      <div className="z-30 py-2 px-5 mb-2 border border-heroGreen/20 rounded-lg grid grid-flow-col auto-cols-fr justify-center items-center gap-5">
+        <Link
+          href="#about"
+          className="group text-red-300 transition-all duration-300 ease-in-out"
+        >
           <button className="heroButton bg-[#2C2C2C]">About</button>
         </Link>
-        <Link href="#experience">
+        <Link
+          href="#experience"
+          className="group text-red-300 transition-all duration-300 ease-in-out"
+        >
           <button className="heroButton bg-[#2C2C2C]">Experience</button>
         </Link>
         {/* <Link href="#skills">
