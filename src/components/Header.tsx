@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import SocialIcons from './SocialIcons';
 
 type Props = {};
 
@@ -48,35 +46,21 @@ const Header = (props: Props) => {
         }}
         className="flex justify-center items-center p-2 gap-6 text-2xl"
       >
-        <motion.div
-          initial={{ scale: 1 }}
-          whileHover={{
-            scale: 1.5,
-            transition: { duration: 0.2 },
-          }}
-        >
-          <Link
-            href="https://github.com/kishansuvarna09"
-            passHref
-            legacyBehavior
-          >
-            <a target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </Link>
-        </motion.div>
-        <motion.div
-          initial={{ scale: 1 }}
-          whileHover={{
-            scale: 1.5,
-            transition: { duration: 0.5 },
-          }}
-          className="flex flex-row items-center text-gray-300 cursor-pointer"
-        >
-          <a href="mailto:kishansuvarna09@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} />
-          </a>
-        </motion.div>
+        <SocialIcons
+          iconType="github"
+          link="https://github.com/kishansuvarna09"
+        />
+        <SocialIcons
+          iconType="linkedin"
+          link="https://www.linkedin.com/in/kishansuvarna09/"
+        />
+
+        <SocialIcons
+          iconType="instagram"
+          link="https://www.instagram.com/kishan_suvarna_"
+        />
+
+        <SocialIcons iconType="envelope" isEmailIcon />
       </motion.div>
     </header>
   );
